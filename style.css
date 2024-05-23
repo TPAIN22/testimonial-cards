@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background: hsl(210, 46%, 95%);
+}
+
+p{
+    color: rgba(255, 255, 255, 0.39);
+    font-size: 16px;
+}
+.black p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+h1{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.black h1{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.678);
+}
+.black h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.678);
+}
+h3{
+    font-size: 1.3em;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+   font-style: normal;
+   padding: 2px;
+   color: white;
+
+}
+.black h3{
+    font-size: 1.3em;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+   font-style: normal;
+   padding: 2px;
+   color: rgb(0, 0, 0);
+}
+.testimonial-grid{
+    display: grid;
+    grid-template-areas: 
+    "one"
+    "tow"
+    "three"
+    "four"
+    "five";
+    gap: 1.5em;
+    margin: 4em 1em;
+}
+.tostimonial-articl1{
+    grid-area: one;
+    display: grid;
+    gap: 1em;
+    background: hsla(263, 55%, 52%, 0.708);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    border-radius:1em;
+    padding: 2em;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(0, 0%, 81%);
+}
+.tostimonial-articl2{
+    grid-area: tow;
+    display: grid;
+    gap: 1em;
+    background: hsl(217, 19%, 35%);
+    border-radius:1em;
+    padding: 2em;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(0, 0%, 81%);
+}
+.tostimonial-articl3{
+    grid-area: three;
+    display: grid;
+    gap: 1em;
+    background: hsl(0, 0%, 100%);
+    border-radius:1em;
+    padding: 2em;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(0, 0%, 81%);
+   }
+.tostimonial-articl4{
+    grid-area: four;
+    display: grid;
+    gap: 1em;
+    background: hsl(219, 29%, 14%);
+    border-radius:1em;
+    padding: 2em;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(0, 0%, 81%);
+}
+.tostimonial-articl5{
+    grid-area: five;
+    display: grid;
+    gap: 1em;
+    background: hsl(0, 0%, 100%);
+    border-radius:1em;
+    padding: 2em;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(0, 0%, 81%);
+}
+
+
+.testimonial-grid img{
+    width: 1.75rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.flex{
+    display: flex;
+    gap: 1em;
+}
+.flex h1{
+    font-weight: 500;
+    font-size: 0.89em;
+}
+
+@media only screen and (min-width:800px) {
+    .testimonial-grid{
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "one one tow five"
+        "three four four five"
+    }
+}
+
